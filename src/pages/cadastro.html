@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - AlertaEnchente</title>
-    <link rel="stylesheet" href="../css/cadastro.css">
-   
+   <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -24,12 +24,12 @@
             </button>
             
             <nav class="nav" id="mainNav">
-                <a href="./index.html" class="nav-link">Início</a>
-                <a href="./deshboard.html" class="nav-link">Dashboard</a>
-                <a href="./quiz.html" class="nav-link">Quiz</a>
-                <a href="./historico.html" class="nav-link">Histórico</a>
-                <a href="./prevencao.html" class="nav-link">Prevenção</a>
-                <a href="./cadastro.html" class="nav-link active">Cadastro</a>
+                <a href="/index.html" class="nav-link active">Início</a>
+                <a href="../pages/dashboard.html" class="nav-link">Dashboard</a>
+                <a href="../pages/quiz.html" class="nav-link">Quiz</a>
+                <a href="../pages/historico.html" class="nav-link">Histórico</a>
+                <a href="../pages/historico.html" class="nav-link">Prevenção</a>
+                <a href="../pages/cadastro.html" class="nav-link">Cadastro</a>
             </nav>
             
             <div class="emergency-btn">
@@ -40,6 +40,111 @@
             </div>
         </div>
     </header>
-   <script src="./src/script.js"></script>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cadastro de Usuário</h2>
+            </div>
+            
+            <div class="registration-container">
+                <div class="registration-form">
+                    <h3>Crie sua conta</h3>
+                    <p>Cadastre-se para receber alertas personalizados da sua região</p>
+                    
+                    <form id="registrationForm" novalidate>
+                        <div class="form-group">
+                            <label for="username">Nome de Usuário *</label>
+                            <input type="text" id="username" name="username" required>
+                            <div class="error-message" id="usernameError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Senha *</label>
+                            <input type="password" id="password" name="password" required>
+                            <div class="password-requirements">
+                                <small>A senha deve ter pelo menos 8 caracteres, incluindo letras e números</small>
+                            </div>
+                            <div class="error-message" id="passwordError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirmar Senha *</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                            <div class="error-message" id="confirmPasswordError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="city">Cidade *</label>
+                            <input type="text" id="city" name="city" required>
+                            <div class="error-message" id="cityError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="region">Região/Bairro *</label>
+                            <select id="region" name="region" required>
+                                <option value="">Selecione sua região</option>
+                                <option value="centro">Centro</option>
+                                <option value="zona-norte">Zona Norte</option>
+                                <option value="zona-sul">Zona Sul</option>
+                                <option value="zona-leste">Zona Leste</option>
+                                <option value="zona-oeste">Zona Oeste</option>
+                                <option value="periferia-norte">Periferia Norte</option>
+                                <option value="periferia-sul">Periferia Sul</option>
+                                <option value="industrial">Região Industrial</option>
+                            </select>
+                            <div class="error-message" id="regionError"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn-register">
+                            <i class="fas fa-user-plus"></i>
+                            Criar Conta
+                        </button>
+                    </form>
+                    
+                    <div class="registration-success" id="registrationSuccess" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Cadastro realizado com sucesso!</h3>
+                        <p>Bem-vindo ao AlertaEnchente. Você receberá alertas personalizados para sua região.</p>
+                        <div class="success-actions">
+                            <a href="dashboard.html" class="btn-success">Ver Dashboard</a>
+                            <a href="quiz.html" class="btn-success btn-secondary">Fazer Quiz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AlertaEnchente</h4>
+                    <p>Sistema de monitoramento e alerta para prevenção de enchentes.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: contato@alertaenchente.gov.br</p>
+                    <p>Telefone: (11) 3333-4444</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AlertaEnchente. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>

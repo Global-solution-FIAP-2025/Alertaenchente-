@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - AlertaEnchente</title>
-    <link rel="stylesheet" href="../css/dashboard.css">
-    
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -23,15 +23,16 @@
                 <span></span>
             </button>
             
-            <nav class="nav" id="mainNav">
-                <a href="./index.html" class="nav-link">Início</a>
-                <a href="./deshboard.html" class="nav-link active">Dashboard</a>
-                <a href="./quiz.html" class="nav-link">Quiz</a>
-                <a href="./historico.html" class="nav-link">Histórico</a>
-                <a href="./prevencao.html" class="nav-link">Prevenção</a>
-                <a href="./cadastro.html" class="nav-link">Cadastro</a>
+             <nav class="nav" id="mainNav">
+                <a href="./index.html" class="nav-link active">Início</a>
+                <a href="./src/pages/dashboard.html" class="nav-link">Dashboard</a>
+                <a href="./src/pages/quiz.html" class="nav-link">Quiz</a>
+                <a href="./src/pages/historico.html" class="nav-link">Histórico</a>
+                <a href="./src/pages/prevencao.html" class="nav-link">Prevenção</a>
+                <a href="./src/pages/cadastro.html" class="nav-link">Cadastro</a>
             </nav>
-<div class="emergency-btn">
+            
+            <div class="emergency-btn">
                 <button class="btn-emergency">
                     <i class="fas fa-exclamation-triangle"></i>
                     Emergência
@@ -103,7 +104,8 @@
                         </div>
                     </div>
                 </div>
-<div class="status-card">
+
+                <div class="status-card">
                     <div class="status-icon">
                         <i class="fas fa-users"></i>
                     </div>
@@ -181,6 +183,6 @@
         </div>
     </footer>
 
-    <script src="./src/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
