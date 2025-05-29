@@ -103,3 +103,84 @@
                         </div>
                     </div>
                 </div>
+<div class="status-card">
+                    <div class="status-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="status-info">
+                        <h3>População Afetada</h3>
+                        <div class="status-value" id="affectedPeople">12.5k</div>
+                        <div class="status-trend down">
+                            <i class="fas fa-arrow-down"></i> -1.2k
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Risk Level Indicator -->
+            <div class="risk-indicator">
+                <h3>Nível de Risco Atual</h3>
+                <div class="risk-levels">
+                    <div class="risk-level baixo" data-level="baixo">
+                        <div class="risk-dot"></div>
+                        <span>Baixo</span>
+                    </div>
+                    <div class="risk-level medio" data-level="medio">
+                        <div class="risk-dot"></div>
+                        <span>Médio</span>
+                    </div>
+                    <div class="risk-level alto active" data-level="alto">
+                        <div class="risk-dot"></div>
+                        <span>Alto</span>
+                    </div>
+                    <div class="risk-level critico" data-level="critico">
+                        <div class="risk-dot"></div>
+                        <span>Crítico</span>
+                    </div>
+                </div>
+                <div class="risk-description">
+                    <p id="riskDescription">Risco Alto: Possibilidade de enchentes em áreas baixas. Mantenha-se atento aos alertas.</p>
+                </div>
+            </div>
+
+            <!-- Regions at Risk -->
+            <div class="regions-risk">
+                <h3><i class="fas fa-map-marked-alt"></i> Regiões Monitoradas (16)</h3>
+                <div class="regions-grid" id="regionsGrid">
+                    <!-- Regions will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AlertaEnchente</h4>
+                    <p>Sistema de monitoramento e alerta para prevenção de enchentes.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: contato@alertaenchente.gov.br</p>
+                    <p>Telefone: (11) 3333-4444</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AlertaEnchente. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
