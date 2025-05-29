@@ -31,3 +31,75 @@
                 <a href="./prevencao.html" class="nav-link">Prevenção</a>
                 <a href="./cadastro.html" class="nav-link">Cadastro</a>
             </nav>
+<div class="emergency-btn">
+                <button class="btn-emergency">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    Emergência
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Alert Banner -->
+    <div class="alert-banner" id="alertBanner">
+        <div class="container">
+            <div class="alert-content">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span id="alertText">Monitorando condições meteorológicas...</span>
+            </div>
+            <button class="alert-close" onclick="closeAlert()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="section-header">
+                <h2>Dashboard de Monitoramento</h2>
+                <div class="last-update">
+                    Última atualização: <span id="lastUpdate"></span>
+                </div>
+            </div>
+
+            <!-- Status Cards -->
+            <div class="status-grid">
+                <div class="status-card">
+                    <div class="status-icon">
+                        <i class="fas fa-cloud-rain"></i>
+                    </div>
+                    <div class="status-info">
+                        <h3>Precipitação Atual</h3>
+                        <div class="status-value" id="currentRain">15.2mm/h</div>
+                        <div class="status-trend up">
+                            <i class="fas fa-arrow-up"></i> +2.3mm/h
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="status-info">
+                        <h3>Nível dos Rios</h3>
+                        <div class="status-value" id="riverLevel">2.8m</div>
+                        <div class="status-trend up">
+                            <i class="fas fa-arrow-up"></i> +0.5m
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-card">
+                    <div class="status-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="status-info">
+                        <h3>Áreas em Risco</h3>
+                        <div class="status-value" id="riskAreas">7</div>
+                        <div class="status-trend stable">
+                            <i class="fas fa-minus"></i> Estável
+                        </div>
+                    </div>
+                </div>
