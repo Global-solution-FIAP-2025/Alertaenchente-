@@ -40,6 +40,70 @@
             </div>
         </div>
     </header>
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quiz sobre Enchentes</h2>
+                <div class="theme-controls">
+                    <button class="theme-btn" onclick="changeTheme('blue')" title="Tema Azul">
+                        <i class="fas fa-circle" style="color: #3498db;"></i>
+                    </button>
+                    <button class="theme-btn" onclick="changeTheme('green')" title="Tema Verde">
+                        <i class="fas fa-circle" style="color: #27ae60;"></i>
+                    </button>
+                    <button class="theme-btn" onclick="changeTheme('purple')" title="Tema Roxo">
+                        <i class="fas fa-circle" style="color: #9b59b6;"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="quiz-container" id="quizContainer">
+                <div class="quiz-header">
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <span class="question-counter">Pergunta <span id="currentQuestion">1</span> de <span id="totalQuestions">10</span></span>
+                    </div>
+                    <div class="quiz-score">
+                        Pontuação: <span id="currentScore">0</span>
+                    </div>
+                </div>
+                
+                <div class="quiz-content">
+                    <div class="question-container">
+                        <h3 id="questionText">Carregando pergunta...</h3>
+                    </div>
+                    
+                    <div class="answers-container" id="answersContainer">
+                        <!-- Answers will be populated by JavaScript -->
+                    </div>
+                    
+                    <div class="quiz-controls">
+                        <button class="btn-quiz" id="nextBtn" onclick="nextQuestion()" disabled>
+                            Próxima Pergunta
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quiz-results" id="quizResults" style="display: none;">
+                <h3>Quiz Concluído!</h3>
+                <div class="final-score">
+                    <span>Sua pontuação final:</span>
+                    <div class="score-display">
+                        <span id="finalScore">0</span>/10
+                    </div>
+                </div>
+                <div class="score-message" id="scoreMessage"></div>
+                <div class="quiz-actions">
+                    <button class="btn-quiz" onclick="restartQuiz()">Refazer Quiz</button>
+                    <a href="./prevencao.html" class="btn-quiz btn-secondary">Dicas de Prevenção</a>
+                </div>
+            </div>
+        </div>
+    </main>
     
 
 

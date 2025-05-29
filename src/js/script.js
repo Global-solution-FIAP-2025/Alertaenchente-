@@ -83,6 +83,7 @@ const imagens = [
   "src/assets/imagem2.jpeg",
   "src/assets/imagem3.jpeg",
   "src/assets/imagem5.jpeg",
+  "src/assets/imagem6.jpeg",
 ];
 let index = 0;
 const slide = document.getElementById("slide-img");

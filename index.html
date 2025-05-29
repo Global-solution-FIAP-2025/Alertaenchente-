@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlertaEnchente - Sistema de Monitoramento</title>
+    <link rel="stylesheet" href="./src/estilo.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-water"></i>
+                <h1>AlertaEnchente</h1>
+            </div>
+            
+            <!-- Botão de menu móvel -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="nav" id="mainNav">
+                <a href="./index.html" class="nav-link active">Início</a>
+                <a href="./deshboard.html" class="nav-link">Dashboard</a>
+                <a href="./quiz.html" class="nav-link">Quiz</a>
+                <a href="./historico.html" class="nav-link">Histórico</a>
+                <a href="./prevencao.html" class="nav-link">Prevenção</a>
+                <a href="./cadastro.html" class="nav-link">Cadastro</a>
+            </nav>
+            
+            <div class="emergency-btn">
+                <button class="btn-emergency">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    Emergência
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner de alerta -->
+    <div class="alert-banner" id="alertBanner">
+        <div class="container">
+            <div class="alert-content">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span id="alertText">Monitorando condições meteorológicas...</span>
+            </div>
+            <button class="alert-close" onclick="closeAlert()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
+         <main>
+      <section class="slideshow">
+        <img id="slide-img" src="" alt="Enchentes" />
+
+      </section>
+    </main>
+        
+        <!-- Welcome Section -->
+        <div class="container">
+            <div class="welcome-section">
+                <h2>Bem-vindo ao AlertaEnchente</h2>
+                <p>Nosso sistema utiliza tecnologia avançada para monitorar condições meteorológicas e níveis de água em tempo real, fornecendo alertas precisos para proteger nossa comunidade.</p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Proteção 24/7</h3>
+                        <p>Monitoramento contínuo para sua segurança</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-bell"></i>
+                        <h3>Alertas Inteligentes</h3>
+                        <p>Notificações personalizadas por região</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Comunidade Unida</h3>
+                        <p>Informações compartilhadas em tempo real</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AlertaEnchente</h4>
+                    <p>Sistema de monitoramento e alerta para prevenção de enchentes.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: contato@alertaenchente.gov.br</p>
+                    <p>Telefone: (11) 3333-4444</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AlertaEnchente. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
