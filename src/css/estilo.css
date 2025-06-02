@@ -215,7 +215,7 @@ body.theme-purple {
 }
 /* Botão Solução e informações */
      .botao-solucao {
-      background-color: #007bff; /* Azul */
+      background-color:  #0077b6; /* Azul */
       color: white;
       padding: 12px 24px;
       text-decoration: none;
@@ -226,7 +226,7 @@ body.theme-purple {
     }
 
     .botao-solucao:hover {
-      background-color: #0056b3; /* Azul mais escuro no hover */
+      background-color: #e67e22; /* Azul mais escuro no hover */
     }
 /* Cards */
 .cards {
@@ -238,7 +238,7 @@ body.theme-purple {
 
 .card {
     background-color: white;
-    border: 2px solid #0077b6;
+    border: 2px solid #9b59b6;
     border-radius: 12px;
     padding: 20px;
     width: 300px;
