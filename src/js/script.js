@@ -102,7 +102,7 @@ window.onload = function () {
   }, 4000); // Aguarda 4 segundos antes de remover a tela de entrada
 };
 
-// Initialize the application based on current page
+// Inicializar o aplicativo com base na página atual
 document.addEventListener("DOMContentLoaded", () => {
   initializeApp()
 })
@@ -111,7 +111,7 @@ function initializeApp() {
   setupMobileMenu()
   setupEmergencyButton()
 
-  // Detect current page and initialize accordingly
+  // Detecte a página atual e inicialize de acordo
   const currentPage = getCurrentPage()
 
   switch (currentPage) {
@@ -142,7 +142,7 @@ function getCurrentPage() {
   return filename || "index"
 }
 
-// Home Page Functions
+// Funções da página inicial
 function initializeHomePage() {
   initializeSlideshow()
 }
@@ -207,7 +207,7 @@ function initializeDashboard() {
   updateLastUpdate()
   setupRegionCards()
 
-  // Start real-time updates
+  // Iniciar atualizações em tempo real
   setInterval(updateData, 30000)
   setInterval(updateLastUpdate, 60000)
   simulateRealTimeData()
@@ -444,12 +444,11 @@ function setupPeriodSelector() {
   })
 }
 
-// Prevencao Functions
+// Funções de Prevenção
 function initializePrevencao() {
-  // Prevention page is mostly static, no special initialization needed
 }
 
-// Cadastro Functions
+// Cadastro
 function initializeCadastro() {
   setupRegistrationForm()
 }
@@ -598,7 +597,7 @@ function showTerms() {
   )
 }
 
-// Common Functions
+// Funções Comuns
 function setupMobileMenu() {
   const mobileMenuBtn = document.getElementById("mobileMenuBtn")
   const mobileNav = document.getElementById("mainNav")

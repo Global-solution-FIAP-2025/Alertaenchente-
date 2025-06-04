@@ -163,7 +163,7 @@ body.theme-purple {
   animation: zoomFade 20s infinite;
 }
 
-/* Welcome Section */
+/* Seção de boas-vindas */
 .welcome-section {
   padding: 4rem 0;
   text-align: center;
@@ -226,7 +226,7 @@ body.theme-purple {
     }
 
     .botao-solucao:hover {
-      background-color: #e67e22; /* Azul mais escuro no hover */
+      background-color: #e67e22; 
     }
 /* Cards */
 .cards {
@@ -306,7 +306,7 @@ body.theme-purple {
   color: var(--primary-color);
 }
 
-/* Alert Banner */
+/* Banner de alerta */
 .alert-banner {
   background-color: var(--warning-color);
   color: white;
@@ -422,7 +422,7 @@ body.theme-purple {
   color: var(--warning-color);
 }
 
-/* Risk Indicator */
+/* Indicador de Risco */
 .risk-indicator {
   background: white;
   padding: 2rem;
@@ -517,7 +517,7 @@ body.theme-purple {
   border-left: 4px solid #e67e22;
 }
 
-/* Regions Grid */
+/* Grade de Regiões */
 .regions-risk {
   background: white;
   padding: 2rem;
@@ -876,7 +876,7 @@ body.theme-purple {
   flex-wrap: wrap;
 }
 
-/* History Section */
+/* Seção de História */
 .period-selector {
   display: flex;
   gap: 1rem;
@@ -973,7 +973,7 @@ body.theme-purple {
   font-size: 0.9rem;
 }
 
-/* Prevention Section */
+/* Seção de Prevenção */
 .prevention-intro {
   background: white;
   padding: 2rem;
@@ -1045,7 +1045,7 @@ body.theme-purple {
   border-bottom: none;
 }
 
-/* Emergency Kit */
+/* Kit de Emergência */
 .emergency-kit {
   background: white;
   padding: 2rem;
@@ -1386,7 +1386,7 @@ body.theme-purple {
   color: #bdc3c7;
 }
 
-/* Responsive Design */
+/* Responsividade */
 @media (max-width: 768px) {
   .mobile-menu-btn {
     display: flex;
@@ -1511,7 +1511,7 @@ body.theme-purple {
   }
 }
 
-/* Animations */
+/* Animações */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -1531,7 +1531,7 @@ body.theme-purple {
   animation: fadeIn 0.6s ease-out;
 }
 
-/* Notification Styles */
+/* Estilos de notificação */
 .notification {
   position: fixed;
   top: 100px;
